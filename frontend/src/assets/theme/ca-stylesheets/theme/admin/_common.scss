@@ -1,0 +1,43 @@
+body {
+    @include regular;
+    color: #555;
+}
+
+.pad15 {
+    padding: 15px;
+}
+
+.wid30 {
+    width: 30%;
+    float: $ltr;
+}
+
+.wid70 {
+    width: 70%;
+    float: $ltr;
+}
+
+.leanh2 {
+    @include light;
+    font-weight: normal;
+}
+
+.blL {
+    border-bottom: 1px solid #efecec;
+}
+
+.brL {
+    border-bottom: 1px solid #efecec;
+}
+
+.btL {
+    border-bottom: 1px solid #efecec;
+}
+
+.bbL {
+    border-bottom: 1px solid #efecec;
+}
+
+.pad10 {
+    padding: 10px
+}

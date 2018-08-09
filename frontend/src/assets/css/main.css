@@ -1,0 +1,822 @@
+header {
+  height: 50px; }
+  header .nav {
+    color: red; }
+    header .nav .a {
+      width: 200px; }
+      header .nav .a.logo {
+        color: #000; }
+
+header .nav a.log {
+  height: 50px; }
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url("../fonts/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular.eot") format("embedded-opentype"), url("../fonts/RobotoRegular.woff2") format("woff2"), url("../fonts/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular.ttf") format("truetype"), url("../fonts/RobotoRegular.svg#RobotoRegular") format("svg"); }
+@font-face {
+  font-family: 'RobotoLight';
+  src: url("../fonts/RobotoLight.eot");
+  src: url("../fonts/RobotoLight.eot") format("embedded-opentype"), url("../fonts/RobotoLight.woff2") format("woff2"), url("../fonts/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight.ttf") format("truetype"), url("../fonts/RobotoLight.svg#RobotoLight") format("svg"); }
+@font-face {
+  font-family: 'RobotoBold';
+  src: url("../fonts/RobotoBold.eot");
+  src: url("../fonts/RobotoBold.eot") format("embedded-opentype"), url("../fonts/RobotoBold.woff2") format("woff2"), url("../fonts/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold.ttf") format("truetype"), url("../fonts/RobotoBold.svg#RobotoBold") format("svg"); }
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url("../fonts/RobotoMedium.eot");
+  src: url("../fonts/RobotoMedium.eot") format("embedded-opentype"), url("../fonts/RobotoMedium.woff2") format("woff2"), url("../fonts/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium.ttf") format("truetype"), url("../fonts/RobotoMedium.svg#RobotoMedium") format("svg"); }
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*----- mixins----------------------------------------------- */
+/*----- mixins----------------------------------------------- */
+/*----- button mixins----------------------------------------------- */
+/*----- mixins-------------------------------------- */
+a:active {
+  outline: none;
+  text-decoration: none; }
+
+a:focus {
+  outline: none;
+  text-decoration: none; }
+
+.center {
+  text-align: center; }
+
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
+.absolute {
+  position: absolute; }
+
+.relative {
+  position: relative; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+.pad0 {
+  padding: 0; }
+
+.alignright {
+  text-align: right; }
+
+.noborder {
+  border: none !important; }
+
+/*----- button mixins----------------------------------------------- */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../images/caret.png");
+  background-position: 93% center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 1px solid #ccc; }
+
+a:hover {
+  color: #48a9e7; }
+
+input {
+  outline: none; }
+
+button {
+  outline: none; }
+
+select {
+  outline: none; }
+
+/*----- mixins----------------------------------------------- */
+/*----- cheome safri only----------------------------------------------- */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .floamlist > li select.guet {
+    text-indent: 30px; } }
+/*----- cheome safri only----------------------------------------------- */
+.ripplelink {
+  display: block;
+  float: left;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  z-index: 0; }
+
+.ripplelink:hover {
+  z-index: 1000; }
+
+.ink {
+  display: block;
+  position: absolute;
+  background: #ddd;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0); }
+
+.animate {
+  -webkit-animation: ripple 0.65s linear;
+  -moz-animation: ripple 0.65s linear;
+  -ms-animation: ripple 0.65s linear;
+  -o-animation: ripple 0.65s linear;
+  animation: ripple 0.65s linear; }
+
+@-webkit-keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2.5); } }
+@-moz-keyframes ripple {
+  100% {
+    opacity: 0;
+    -moz-transform: scale(2.5); } }
+@-o-keyframes ripple {
+  100% {
+    opacity: 0;
+    -o-transform: scale(2.5); } }
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    transform: scale(2.5); } }
+/*----- mixins----------------------------------------------- */
+/*----- mixins----------------------------------------------- */
+/*----- button mixins----------------------------------------------- */
+/*----- mixins-------------------------------------- */
+a:active {
+  outline: none;
+  text-decoration: none; }
+
+a:focus {
+  outline: none;
+  text-decoration: none; }
+
+.center {
+  text-align: center; }
+
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
+.absolute {
+  position: absolute; }
+
+.relative {
+  position: relative; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+.pad0 {
+  padding: 0; }
+
+.alignright {
+  text-align: right; }
+
+.noborder {
+  border: none !important; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../images/caret.png");
+  background-position: 93% center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 1px solid #ccc; }
+
+a:hover {
+  color: #48a9e7; }
+
+input {
+  outline: none; }
+
+button {
+  outline: none; }
+
+select {
+  outline: none; }
+
+.radiostyle {
+  float: left; }
+
+/*----- mixins----------------------------------------------- */
+/*----- cheome safri only----------------------------------------------- */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .floamlist > li select.guet {
+    text-indent: 30px; } }
+/*----- cheome safri only----------------------------------------------- */
+.ripplelink {
+  display: block;
+  float: left;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  z-index: 0; }
+
+.ripplelink:hover {
+  z-index: 1000; }
+
+.ink {
+  display: block;
+  position: absolute;
+  background: #ddd;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0); }
+
+.animate {
+  -webkit-animation: ripple 0.65s linear;
+  -moz-animation: ripple 0.65s linear;
+  -ms-animation: ripple 0.65s linear;
+  -o-animation: ripple 0.65s linear;
+  animation: ripple 0.65s linear; }
+
+@-webkit-keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2.5); } }
+@-moz-keyframes ripple {
+  100% {
+    opacity: 0;
+    -moz-transform: scale(2.5); } }
+@-o-keyframes ripple {
+  100% {
+    opacity: 0;
+    -o-transform: scale(2.5); } }
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    transform: scale(2.5); } }
+/*----- responsive mixins starts----------------------------------------------- */
+/*----- responsive mixins end----------------------------------------------- */
+.btn {
+  font-family: "RobotoRegular";
+  background: #f5f5f5;
+  font-size: 13px;
+  color: #444;
+  border: 1px solid #e0dfdf;
+  margin: 0 2px 0 0; }
+
+.btn-primary {
+  background: #48a9e7;
+  border: 1px solid #48a9e7;
+  color: #fff; }
+
+.wishlistcontainer {
+  margin: 0px;
+  float: left;
+  background: #fff;
+  width: 100%; }
+
+.wishlistmodal.modal .modal-body {
+  padding: 0; }
+.wishlistmodal.modal .modal-dialog {
+  width: 800px;
+  margin: 30px auto; }
+
+form.wishlistcreateform {
+  margin: 7px -2px 0px 0; }
+  form.wishlistcreateform button {
+    border-radius: 0; }
+
+.wishlisthalf {
+  float: left;
+  width: 50%;
+  position: relative; }
+
+.usercontainer {
+  position: absolute;
+  bottom: 0;
+  background: #0000008a;
+  padding: 20px 10px; }
+  .usercontainer .hosterImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin: 0px 10px 0 0; }
+    .usercontainer .hosterImage img {
+      width: 100%; }
+  .usercontainer > h5 {
+    float: left;
+    width: calc(100% - 70px);
+    color: #ffff;
+    font-weight: bold;
+    margin: 5px 0 1px 0;
+    font-size: 17px; }
+  .usercontainer > span {
+    color: #fff;
+    float: left;
+    width: calc(100% - 70px); }
+
+.proImage img {
+  width: 100%;
+  height: 100%; }
+
+.wishlistList {
+  height: 400px;
+  overflow: auto; }
+  .wishlistList li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px; }
+    .wishlistList li:last-child {
+      border-bottom: none; }
+    .wishlistList li .fa {
+      float: right; }
+
+button.create {
+  width: 100%;
+  background: no-repeat;
+  border: none;
+  padding: 12px 0;
+  border-top: 1px solid #ccc; }
+
+figure.proImage {
+  height: 500px; }
+
+.wishlistcreateform input[type="text"] {
+  float: left;
+  width: calc(100% - 93px);
+  border-radius: 0;
+  height: 37px;
+  border: none;
+  font-size: 19px;
+  padding: 15px;
+  border-top: 1px solid #ccc; }
+
+.wishtitle {
+  font-size: 20px;
+  padding: 18px 14px 15px;
+  border-bottom: 1px solid #cccc;
+  margin: 0;
+  width: 100%; }
+
+.wishlist-list {
+  float: left;
+  width: 100%;
+  text-align: left;
+  margin: 0 -15px; }
+  .wishlist-list > li {
+    float: left;
+    width: 33.33%;
+    padding: 0 15px 15px 15px; }
+    .wishlist-list > li > a {
+      float: left;
+      width: 100%;
+      text-align: left;
+      height: 350px;
+      background: #ccc;
+      position: relative; }
+
+.wishlisttext {
+  position: absolute;
+  bottom: 15px;
+  right: 15px; }
+  .wishlisttext span.listname,
+  .wishlisttext span.homecount {
+    float: left;
+    width: 100%;
+    text-align: right;
+    color: #fff;
+    font-family: 'RobotoMedium';
+    font-size: 20px; }
+
+.wishlistuser {
+  float: left;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 30px; }
+
+.wish-userdetl {
+  float: left; }
+  .wish-userdetl > span {
+    color: #FF5A5F;
+    font-family: 'RobotoMedium';
+    font-size: 20px; }
+  .wish-userdetl figure {
+    float: left;
+    width: 60px;
+    margin: 0 10px 0 0;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden; }
+    .wish-userdetl figure img {
+      float: left;
+      width: 100%;
+      text-align: left; }
+  .wish-userdetl > label {
+    float: left;
+    width: 100%;
+    text-align: left;
+    width: 50%; }
+
+.tablehead {
+  background: #f7f7f7; }
+  .tablehead tr {
+    height: 40px; }
+  .tablehead th {
+    font-family: "RobotoRegular";
+    font-size: 14px;
+    color: #888;
+    border-bottom: 1px solid #eee; }
+
+.hysasTable > div {
+  box-shadow: none;
+  border-left: 1px solid #eee;
+  border-radius: 0;
+  border-top: 1px solid #eee;
+  border-right: 1px solid #eee;
+  margin: 0; }
+
+.hysasTable .ContactTable-table-2 {
+  min-width: 100%; }
+
+.tableicon {
+  float: left;
+  margin: 0 3px; }
+
+.tablebody td,
+.tablebody th {
+  font-size: 13px;
+  color: #444;
+  border-bottom: 1px solid #eee; }
+.tablebody tr {
+  height: 40px; }
+
+.hysasTab header {
+  color: #444;
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  height: auto;
+  box-shadow: none;
+  font-family: "RobotoLight";
+  font-weight: normal;
+  border-bottom: 1px solid #efecec; }
+  .hysasTab header > div {
+    min-height: inherit; }
+.hysasTab .MuiTab-root-64 {
+  min-width: auto;
+  min-height: inherit; }
+.hysasTab button {
+  font-family: "RobotoRegular";
+  font-weight: normal;
+  color: #48a9e7;
+  text-transform: capitalize;
+  opacity: 1; }
+  .hysasTab button span {
+    font-size: 15px; }
+  .hysasTab button.MuiTab-selected-69 {
+    color: #444; }
+  .hysasTab button .MuiTab-labelContainer-73 {
+    padding-left: 14px;
+    padding-right: 14px; }
+  .hysasTab button:focus, .hysasTab button:hover {
+    outline: none; }
+.hysasTab .TabIndicator-colorSecondary-81 {
+  background-color: #48a9e7; }
+
+.MuiTouchRipple-root-82:focus {
+  outline: none; }
+
+header {
+  float: left;
+  width: 100%;
+  text-align: left;
+  width: calc(100% - 180px);
+  height: 55px;
+  padding: 10px 15px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #e8e7e7; }
+
+.headerico {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 6px 6px;
+  margin: 0px 12px 0 0;
+  float: left; }
+
+.themeico {
+  background: #48a9e7;
+  color: #fff;
+  border: 1px solid #48a9e7; }
+
+.headerform {
+  border-radius: 50px;
+  border: 1px solid #eee;
+  height: 35px;
+  width: 300px;
+  float: left;
+  width: 300px;
+  background: #fff; }
+  .headerform .searchico {
+    margin: 9px 0 0 15px; }
+  .headerform input {
+    background: none;
+    border: none; }
+
+.headerright {
+  float: right; }
+
+.userName {
+  font-size: 13px;
+  margin: 7px 0 0 0;
+  float: right; }
+
+.sidebartop {
+  float: left;
+  height: 55px;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #e8e7e7;
+  text-align: center;
+  color: #000; }
+
+.sidebarmenu {
+  float: left;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 30px; }
+  .sidebarmenu li {
+    float: left;
+    width: 100%;
+    text-align: left; }
+    .sidebarmenu li a {
+      float: left;
+      width: 100%;
+      text-align: left;
+      color: #555;
+      padding: 7px 15px;
+      font-size: 14px;
+      text-transform: capitalize;
+      font-family: "RobotoRegular"; }
+      .sidebarmenu li a svg {
+        color: #999; }
+      .sidebarmenu li a.active {
+        background: #48a9e7;
+        color: #fff; }
+        .sidebarmenu li a.active svg {
+          color: #fff; }
+
+.icol {
+  float: left;
+  margin: 1px 8px 0 0; }
+
+.adminview {
+  float: left;
+  width: 100%;
+  text-align: left; }
+
+.sidebar {
+  float: left;
+  width: 180px;
+  min-height: 635px;
+  background: #eee; }
+
+.maincontent {
+  float: left;
+  width: calc(100% - 180px);
+  min-height: 570px; }
+
+.titlebar {
+  border-bottom: 1px solid #efecec;
+  padding: 10px 23px; }
+  .titlebar .icol {
+    float: left;
+    margin: 5px 8px 0 0; }
+  .titlebar .righsidedoptions {
+    float: right; }
+    .titlebar .righsidedoptions .icol {
+      color: #fff;
+      margin: 0px 0 0 5px;
+      padding: 5px;
+      background: #ccc; }
+      .titlebar .righsidedoptions .icol.themebg {
+        background: #48a9e7; }
+
+.clientdetailviewTop > h4 {
+  margin: 0;
+  float: left; }
+
+.top-right {
+  float: right; }
+
+.clientdetailviewTop {
+  float: left;
+  width: 100%;
+  text-align: left;
+  padding: 10px 15px; }
+
+.conatactfulldetail {
+  text-align: left;
+  margin: 0; }
+
+.lesftdet {
+  background: #fbfbfb;
+  float: left;
+  width: 30%;
+  border-right: 1px solid #efecec;
+  height: 450px;
+  padding: 0 15px; }
+
+figure.userimage {
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin: 10px 5px 0 0;
+  border-radius: 50%;
+  border: 1px solid #eee; }
+
+.addresssection {
+  float: left;
+  width: 100%;
+  text-align: left;
+  margin: 20px 0 0px 0;
+  font-size: 13px; }
+
+.userifos {
+  float: left;
+  margin: 12px 0 0 0;
+  width: calc(100% - 55px); }
+  .userifos > span {
+    float: left;
+    width: 100%;
+    text-align: left;
+    font-size: 13px; }
+
+span.headersectionTitle {
+  float: left;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid #efecec;
+  padding: 3px 0px;
+  margin: 0 0 15px 0; }
+
+span.addresTitle {
+  float: left;
+  width: 100%;
+  text-align: left; }
+  span.addresTitle address {
+    float: left;
+    width: 100%;
+    text-align: left; }
+
+.clientdetailview {
+  border-left: 1px solid #ccc;
+  padding: 0 0 0 1px; }
+
+.addresssect {
+  color: #888; }
+
+.rightsectioncontact {
+  float: left;
+  width: 69%;
+  padding: 15px; }
+
+.panelinfos {
+  float: left;
+  border: 1px solid #efecec;
+  padding: 10px;
+  margin-bottom: 10px; }
+
+.infopaneltile {
+  float: left;
+  width: 100%;
+  text-align: left;
+  font-size: 19px;
+  margin: 0 0 20px 0; }
+
+.panelist {
+  float: left;
+  width: 100%;
+  text-align: left; }
+  .panelist li {
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin: 0 0 20px 0; }
+    .panelist li .taskname {
+      float: left;
+      width: 100%;
+      text-align: left;
+      margin: 0; }
+    .panelist li span {
+      font-size: 12px;
+      color: #888; }
+
+.clientlistsidebar .tablebody td,
+.clientlistsidebar .tablebody th {
+  font-size: 14px;
+  color: #48a9e7;
+  border-bottom: 1px solid #eee; }
+
+body {
+  font-family: "RobotoRegular";
+  color: #555; }
+
+.pad15 {
+  padding: 15px; }
+
+.wid30 {
+  width: 30%;
+  float: left; }
+
+.wid70 {
+  width: 70%;
+  float: left; }
+
+.leanh2 {
+  font-family: "RobotoLight";
+  font-weight: normal; }
+
+.blL {
+  border-bottom: 1px solid #efecec; }
+
+.brL {
+  border-bottom: 1px solid #efecec; }
+
+.btL {
+  border-bottom: 1px solid #efecec; }
+
+.bbL {
+  border-bottom: 1px solid #efecec; }
+
+.pad10 {
+  padding: 10px; }
+
+.clientaddForm {
+  float: left;
+  width: 100%;
+  text-align: left;
+  width: 70%;
+  margin: 0 0 40px 0; }
+  .clientaddForm li {
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin: 0 0 10px 0; }
+    .clientaddForm li .formField {
+      float: left;
+      width: calc(100% - 140px);
+      border: 1px solid #ececec;
+      border-radius: 2px;
+      padding: 4px 10px;
+      font-size: 13px;
+      height: 30px; }
+    .clientaddForm li textarea.formField {
+      height: 80px; }
+  .clientaddForm li > label {
+    width: 140px;
+    font-size: 14px;
+    float: left;
+    color: #444;
+    margin: 0 0 10px 0; }
+
+.contactformpage {
+  float: left;
+  width: 98%;
+  padding: 20px 20px; }
+
+h4.addressformTitle {
+  font-family: "RobotoLight";
+  font-weight: normal;
+  font-size: 20px;
+  border-bottom: 1px solid #efecec;
+  padding: 0 0 10px 0;
+  margin: 0 0 20px 0; }
+
+/*# sourceMappingURL=main.css.map */

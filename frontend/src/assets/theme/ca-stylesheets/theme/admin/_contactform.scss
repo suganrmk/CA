@@ -1,0 +1,43 @@
+.clientaddForm {
+    @include float($ltr);
+    width: 70%;
+    margin: 0 0 40px 0;
+    li {
+        @include float($ltr);
+        margin: 0 0 10px 0;
+        .formField {
+            float: $ltr;
+            width: calc(100% - 140px);
+            border: 1px solid #ececec;
+            border-radius: 2px;
+            padding: 4px 10px;
+            font-size: 13px;
+            height: 30px;
+        }
+        textarea.formField {
+            height: 80px;
+        }
+    }
+    li>label {
+        width: 140px;
+        font-size: 14px;
+        float: $ltr;
+        color: #444;
+        margin: 0 0 10px 0;
+    }
+}
+
+.contactformpage {
+    float: left;
+    width: 98%;
+    padding: 20px 20px;
+}
+
+h4.addressformTitle {
+    @include light;
+    font-weight: normal;
+    font-size: 20px;
+    border-bottom: 1px solid $bl;
+    padding: 0 0 10px 0;
+    margin: 0 0 20px 0;
+}

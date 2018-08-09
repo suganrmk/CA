@@ -1,0 +1,44 @@
+.tablehead {
+    background: #f7f7f7;
+    tr {
+        height: 40px;
+    }
+    th {
+        @include regular;
+        font-size: 14px;
+        color: #888;
+        border-bottom: 1px solid #eee;
+    }
+}
+
+.hysasTable>div {
+    box-shadow: none;
+    border-left: 1px solid #eee;
+    border-radius: 0;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    margin: 0;
+}
+
+.hysasTable {
+    .ContactTable-table-2 {
+        min-width: 100%;
+    }
+}
+
+.tableicon {
+    float: left;
+    margin: 0 3px;
+}
+
+.tablebody {
+    td,
+    th {
+        font-size: 13px;
+        color: #444;
+        border-bottom: 1px solid #eee;
+    }
+    tr {
+        height: 40px;
+    }
+}

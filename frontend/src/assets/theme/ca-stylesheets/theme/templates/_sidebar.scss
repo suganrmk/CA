@@ -1,0 +1,40 @@
+.sidebartop {
+    float: $ltr;
+    height: 55px;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #e8e7e7;
+    text-align: center;
+    color: #000;
+}
+
+.sidebarmenu {
+    @include float($ltr);
+    margin-bottom: 30px;
+    li {
+        @include float($ltr);
+        a {
+            @include float($ltr);
+            color: #555;
+            padding: 7px 15px;
+            font-size: 14px;
+            text-transform: capitalize;
+            @include regular;
+            svg {
+                color: #999;
+            }
+            &.active {
+                background: $theme;
+                color: #fff;
+                svg {
+                    color: #fff
+                }
+            }
+        }
+    }
+}
+
+.icol {
+    float: left;
+    margin: 1px 8px 0 0;
+}

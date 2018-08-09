@@ -1,0 +1,64 @@
+$theme:#268ddc;
+$theme2:#00a699;
+$red:#FF5A5F;
+$cyan:#32959F;
+$greylight:#F5F5F5;
+$grey:#CDD0CC;
+$bl: #efecec;
+//text-color
+$text:#484848;
+$text2:#82888a;
+$blue: #0CE9DA;
+$blued: #62c2cb;
+$blueli: #1da3bf;
+$orange:#FF900B;
+$ash:#484848;
+$ltr: left;
+$rtl: right;
+$ctr: center;
+$basefont:14px;
+$theme:#48a9e7;
+$red:#FF5A5F;
+$cyan:#32959F;
+$yellow:#e2a93a;
+$greylight:#F5F5F5;
+$grey:#CDD0CC;
+$white:#fff;
+$darkgrey:#485462;
+$lightgrey:#8492a1;
+//text-color
+$text2:#8492a1;
+$blue: #222F3C;
+$blued: #62c2cb;
+$blueli: #1da3bf;
+$orange:#FF900B;
+$ash:#484848;
+$pinkorange: #fc584b;
+$ltr: left;
+$rtl: right;
+$ctr: center;
+$basefont:14px;
+// gradient
+$orangepink: linear-gradient(135deg, #fe875d 0%, #fd6ba1 100%);
+$violetblue: linear-gradient(135deg, #8e6fee 0%, #6699d1 100%);
+$greenblue: linear-gradient(135deg, #3cd0c0 0%, #129bd2 100%);
+$pinkviolet: linear-gradient(135deg, #ee71e9 0%, #8463f8 100%);
+$yelloworange: linear-gradient(135deg, #fad25c 0%, #f87422 100%);
+header {
+    height: 50px;
+    .nav {
+        color: red;
+        .a {
+            width: 200px;
+            &.logo {
+                color: #000
+            }
+        }
+    }
+}
+
+header .nav a.log {
+    height: 50px;
+}
+
+header .nav {}

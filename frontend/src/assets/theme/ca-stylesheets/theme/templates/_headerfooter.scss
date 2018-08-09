@@ -1,0 +1,49 @@
+header {
+    @include float($ltr);
+    width: calc(100% - 180px);
+    height: 55px;
+    padding: 10px 15px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #e8e7e7;
+}
+
+.headerico {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 6px 6px;
+    margin: 0px 12px 0 0;
+    float: $ltr;
+}
+
+.themeico {
+    background: $theme;
+    color: #fff;
+    border: 1px solid $theme;
+}
+
+.headerform {
+    border-radius: 50px;
+    border: 1px solid #eee;
+    height: 35px;
+    width: 300px;
+    float: $ltr;
+    width: 300px;
+    background: #fff;
+    .searchico {
+        margin: 9px 0 0 15px;
+    }
+    input {
+        background: none;
+        border: none;
+    }
+}
+
+.headerright {
+    float: $rtl;
+}
+
+.userName {
+    font-size: 13px;
+    margin: 7px 0 0 0;
+    float: right;
+}

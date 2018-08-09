@@ -1,0 +1,51 @@
+.hysasTab {
+    header {
+        color: #444;
+        background: none;
+        padding: 0;
+        margin: 0;
+        border: none;
+        height: auto;
+        box-shadow: none;
+        @include light;
+        font-weight: normal;
+        border-bottom: 1px solid #efecec;
+        >div {
+            min-height: inherit;
+        }
+    }
+    .MuiTab-root-64 {
+        min-width: auto;
+        min-height: inherit;
+    }
+    button {
+        @include regular;
+        font-weight: normal;
+        color: $theme;
+        text-transform: capitalize;
+        opacity: 1;
+        span {
+            font-size: 15px;
+        }
+        &.MuiTab-selected-69 {
+            color: #444;
+        }
+        .MuiTab-labelContainer-73 {
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+        &:focus,
+        &:hover {
+            outline: none;
+        }
+    }
+    .TabIndicator-colorSecondary-81 {
+        background-color: $theme;
+    }
+}
+
+.MuiTouchRipple-root-82 {
+    &:focus {
+        outline: none;
+    }
+}
