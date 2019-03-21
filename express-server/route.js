@@ -37,52 +37,52 @@ router.route('/slider').post(homeslider.addHomeSlider);
 router.route('/slider').put(homeslider.updateHomeSlider);
 router.route('/slider/:id').delete(homeslider.deleteHomeSlider); 
 
-//review
-router.route('/review').post(reviewController.addReviews);
-router.route('/getreview/:id').post(reviewController.getReviews);
-router.route('/getuserreview').post(reviewController.getuserReviews);
-router.route('/getReviewsByuser').post(reviewController.getReviewsByuser);
+// //review
+// router.route('/review').post(reviewController.addReviews);
+// router.route('/getreview/:id').post(reviewController.getReviews);
+// router.route('/getuserreview').post(reviewController.getuserReviews);
+// router.route('/getReviewsByuser').post(reviewController.getReviewsByuser);
 
-// payout - card details
-router.route('/savecard').post(cardController.addcarddetails);
-router.route('/getcard/:id').get(cardController.getCards);
-router.route('/updatecard').put(cardController.updateCards);
-router.route('/deletecard/:id').delete(cardController.deleteCards);
+// // payout - card details
+// router.route('/savecard').post(cardController.addcarddetails);
+// router.route('/getcard/:id').get(cardController.getCards);
+// router.route('/updatecard').put(cardController.updateCards);
+// router.route('/deletecard/:id').delete(cardController.deleteCards);
  
 
 
-//sitesettings
-router.route('/updatesitesettings').put(sitesettings.updatesitesettings);
-router.route('/getsitesettings').get(sitesettings.getsitesettings);
+// //sitesettings
+// router.route('/updatesitesettings').put(sitesettings.updatesitesettings);
+// router.route('/getsitesettings').get(sitesettings.getsitesettings);
 
-// servicefeee
-router.route('/getservicefees').get(sitesettings.getservicefees);
-router.route('/updateservicefees').put(sitesettings.updateservicefees);
+// // servicefeee
+// router.route('/getservicefees').get(sitesettings.getservicefees);
+// router.route('/updateservicefees').put(sitesettings.updateservicefees);
 
-// commonController
-router.route('/getcurrency').get(commonController.getCurrencylist);
-router.route('/getcurrencylist').get(commonController.getCurrencyname);
-router.route('/updateCurrencyName').put(commonController.updateCurrencyName);
-router.route('/getAllCurrencyname').get(commonController.getAllCurrencyname);
+// // commonController
+// router.route('/getcurrency').get(commonController.getCurrencylist);
+// router.route('/getcurrencylist').get(commonController.getCurrencyname);
+// router.route('/updateCurrencyName').put(commonController.updateCurrencyName);
+// router.route('/getAllCurrencyname').get(commonController.getAllCurrencyname);
 
-//search
-router.route('/search').post(searchController.searchProducts);
+// //search
+// router.route('/search').post(searchController.searchProducts);
 
-//message
-router.route('/message').post(messageController.getMessages); 
-router.route('/reply').post(messageController.replyMessages);
-router.route('/deletemessage/:id').delete(messageController.deleteMessage);
-router.route('/statuschange').put(messageController.updateStatus);
+// //message
+// router.route('/message').post(messageController.getMessages); 
+// router.route('/reply').post(messageController.replyMessages);
+// router.route('/deletemessage/:id').delete(messageController.deleteMessage);
+// router.route('/statuschange').put(messageController.updateStatus);
 
-//user data
-router.route('/userupdate').put(userController.updateUsers);
-router.route('/userpicupdate').put(userController.updateUsersImage);
-router.route('/getuser').post(userController.getuser);
+// //user data
+// router.route('/userupdate').put(userController.updateUsers);
+// router.route('/userpicupdate').put(userController.updateUsersImage);
+// router.route('/getuser').post(userController.getuser);
 
-//mobileverification
-router.route('/generatemobileverfication').post(mobiletokenController.generatemobileToken);
-router.route('/verifymobileToken').post(mobiletokenController.verifymobileToken);
-router.route('/googleverification').post(mobiletokenController.googleverification);
+// //mobileverification
+// router.route('/generatemobileverfication').post(mobiletokenController.generatemobileToken);
+// router.route('/verifymobileToken').post(mobiletokenController.verifymobileToken);
+// router.route('/googleverification').post(mobiletokenController.googleverification);
 
 
  
